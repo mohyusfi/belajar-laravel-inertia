@@ -4,7 +4,7 @@ defineProps(['type']);
 
 <template>
     <button :type="type || 'button'" class="btn">
-        <slot/>
+        <slot></slot>
     </button>
 </template>
 
