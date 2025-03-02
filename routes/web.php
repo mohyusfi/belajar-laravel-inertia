@@ -9,3 +9,6 @@ Route::get('/', [HomeController::class, 'homePage'])->name('home');
 
 Route::inertia('/register', 'Auth/Register', ['title' => 'Register'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
+
+Route::inertia('/login', 'Auth/Login', ['title' => 'Login'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);

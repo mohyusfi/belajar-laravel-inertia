@@ -18,6 +18,7 @@
                 <Link class="cursor-pointer" :href="route('home')">Home</Link>
                 <Link class="cursor-pointer" :href="route('counter')">Counter</Link>
                 <Link class="cursor-pointer" :href="route('register')">Register</Link>
+                <Link class="cursor-pointer" :href="route('login')">Login</Link>
             </div>
         </header>
 

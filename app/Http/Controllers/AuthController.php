@@ -23,4 +23,16 @@ class AuthController extends Controller
 
         return redirect()->route('home');
     }
+
+    public function login(Request $request)
+    {
+        $requestData = $request->validate([
+            "email" => ["required", "email", "string", "exists:users,email"],
+            "password" => ["required", "string"]
+        ]);
+
+        Auth::attempt($requestData, true);
+
+        return redirect()->route('home');
+    }
 }
