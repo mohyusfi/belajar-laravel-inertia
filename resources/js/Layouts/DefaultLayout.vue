@@ -1,36 +1,40 @@
 <script setup>
 // import { Link, Head } from '@inertiajs/vue3'; already use in global component
+defineProps(["errors", "appName", "message", "auth"]);
 
 </script>
 
 <template>
-    <Head>
-        <meta
-            head-key="description"
-            name="description"
-            content="This Is description of My app"
-            />
-    </Head>
-    <div class="layout">
-        <header class="flex-row justify-items-center bg-gray-600 text-white text-center">
-            <h1>My App</h1>
-            <div class="flex w-[20%] py-5 justify-around">
-                <Link class="cursor-pointer" :href="route('home')">Home</Link>
-                <Link class="cursor-pointer" :href="route('counter')">Counter</Link>
-                <Link class="cursor-pointer" :href="route('register')">Register</Link>
-                <Link class="cursor-pointer" :href="route('login')">Login</Link>
-            </div>
-        </header>
+    <div>
+        <Head>
+            <meta
+                head-key="description"
+                name="description"
+                content="This Is description of My app"
+                />
+        </Head>
+        <div class="layout">
+            <header class="flex-row justify-items-center bg-gray-600 text-white text-center">
+                <h1>My App</h1>
+                <div class="flex w-[20%] py-5 justify-around">
+                    <Link class="cursor-pointer" :href="route('home')">Home</Link>
+                    <Link class="cursor-pointer" :href="route('counter')">Counter</Link>
+                    <Link class="cursor-pointer" :href="route('register')">Register</Link>
+                    <Link class="cursor-pointer" :href="route('login')">Login</Link>
+                </div>
+            </header>
 
-        <!-- Konten utama -->
-        <main class="content">
-            <slot></slot>
-        </main>
+            <!-- Konten utama -->
+            <main class="content">
+                <slot></slot>
+            </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>© 2025 My App</p>
-        </footer>
+            <!-- Footer -->
+            <footer class="footer">
+                <p>© 2025 My App</p>
+            </footer>
+        </div>
+
     </div>
 </template>
 

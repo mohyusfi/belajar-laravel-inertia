@@ -18,7 +18,7 @@ const submit = () => {
     console.log(form);
     form.post("/register", {
         onError: () => form.reset("password", "password_confirmation"),
-        preserveScroll: true
+        preserveScroll: true,
     });
 };
 
