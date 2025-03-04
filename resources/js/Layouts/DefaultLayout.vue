@@ -1,6 +1,5 @@
 <script setup>
 // import { Link, Head } from '@inertiajs/vue3'; already use in global component
-defineProps(["errors", "appName", "message", "auth"]);
 
 </script>
 
@@ -19,6 +18,7 @@ defineProps(["errors", "appName", "message", "auth"]);
                 <div class="flex w-[20%] py-5 justify-around">
                     <Link class="cursor-pointer" :href="route('home')">Home</Link>
                     <Link class="cursor-pointer" :href="route('counter')">Counter</Link>
+                    <Link class="cursor-pointer" :href="route('post')">Post</Link>
                     <Link class="cursor-pointer" :href="route('register')">Register</Link>
                     <Link class="cursor-pointer" :href="route('login')">Login</Link>
                 </div>

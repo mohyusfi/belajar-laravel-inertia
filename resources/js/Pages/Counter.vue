@@ -27,9 +27,6 @@ const handleFocus = (event) => {
     // console.log(isFocus.value);
 };
 
-
-
-
 // const getFullName = () => {
 //     console.log(data.fullName);
 //     return data.fullName;

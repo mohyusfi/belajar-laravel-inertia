@@ -14,7 +14,7 @@ const id = 'message';
 </script>
 
 <template>
-    <div>{{ user }}</div>
+    <!-- <div>{{ user }}</div> -->
     <Head title="Home - ">
         <meta
             head-key="description"
@@ -27,7 +27,7 @@ const id = 'message';
         <p v-bind:class="classMessage">{{ message }}</p>
         <div :id="id" :class="classMessage" v-html="content"></div>
         <div>{{ $page }}</div>
-        <div>{{ $page.props.user }}</div>
+        <div>{{ auth.user.id }}</div>
         <!-- <h1 class="font-bold text-9xl">{{ auth.user.id ?}}</h1> -->
         <!-- <h1 class="font-bold text-9xl">{{ auth.user.name }}</h1> -->
         <button type="submit" class="mt-3 rounded-4xl bg-amber-400 p-2 cursor-pointer">Click Me</button>

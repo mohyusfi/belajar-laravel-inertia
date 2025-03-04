@@ -35,3 +35,7 @@ createInertiaApp({
         showSpinner: true,
     },
 });
+
+const pages = import.meta.glob("./Pages/**/*.vue", { eager: true });
+console.log(pages);
+console.log(pages['./Pages/Home.vue']);

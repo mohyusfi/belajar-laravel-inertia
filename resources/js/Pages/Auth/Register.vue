@@ -33,19 +33,19 @@ const submit = () => {
             <label>Name</label>
             <input type="text" v-model="form.name" class="border-2 rounded-md ms-2 px-3 py-1">
             <br>
-            <small class="text-red-400">{{ form.errors.name  }}</small>
+            <small class="text-red-400">{{ form.errors.name }}</small>
         </div>
         <div class="mb-6">
             <label>Email</label>
             <input type="text" v-model="form.email" class="border-2 rounded-md ms-2 px-3 py-1">
             <br>
-            <small class="text-red-400">{{ form.errors.email  }}</small>
+            <small class="text-red-400">{{ form.errors.email }}</small>
         </div>
         <div class="mb-6">
             <label>Password</label>
             <input type="text" v-model="form.password" class="border-2 rounded-md ms-2 px-3 py-1">
             <br>
-            <small class="text-red-400">{{ form.errors.password  }}</small>
+            <small class="text-red-400">{{ form.errors.password }}</small>
         </div>
         <div class="mb-6">
             <label>Confirm Password</label>

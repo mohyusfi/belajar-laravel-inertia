@@ -18,7 +18,7 @@ class HomeController extends Controller
     {
         // sleep(1);
         return Inertia::render('Home', [
-            'user' => 'Yusfi',
+            // 'user' => 'Yusfi',
             'message' => 'Hello from Laravel Inertia!',
         ]);
     }
