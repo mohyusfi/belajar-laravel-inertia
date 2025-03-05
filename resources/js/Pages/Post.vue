@@ -5,12 +5,12 @@ import { useForm } from '@inertiajs/vue3';
 const form = useForm({
     title: null,
     description: null,
-    image: null,
+    picture: null,
 });
 
 const getFile = (e) => {
-    // form.image = e.target.files[0];
-    console.log(e.target.files);
+    form.picture = e.target.files[0];
+    // console.log(e.target.files);
 };
 
 const submit = () => {
@@ -19,6 +19,7 @@ const submit = () => {
     });
     console.log(form);
 };
+
 </script>
 
 <template>
@@ -50,7 +51,6 @@ const submit = () => {
                         type="file"
                         id="image"
                         name="image"
-                        multiple
                         class="mt-1 block w-full border border-gray-300 rounded-lg file:px-4 file:py-2 file:bg-blue-500 file:text-white file:border-none file:rounded-lg hover:file:bg-blue-600"
                         @input="getFile">
                 </div>

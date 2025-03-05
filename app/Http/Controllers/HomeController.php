@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -16,10 +17,9 @@ class HomeController extends Controller
 
     public function homePage()
     {
-        // sleep(1);
         return Inertia::render('Home', [
-            // 'user' => 'Yusfi',
             'message' => 'Hello from Laravel Inertia!',
+            'post' => Post::all()
         ]);
     }
 
